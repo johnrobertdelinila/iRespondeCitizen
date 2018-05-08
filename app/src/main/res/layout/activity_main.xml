@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="-23dp"
+            android:layout_marginTop="30dp"
+            app:mtf_cardCollapsedHeight="2dp"
+            app:mtf_animationDuration="200"
+            app:mtf_openKeyboardOnFocus="true"
+            app:mtf_image="@drawable/ic_account_circle_black_24dp"
+            app:mtf_labelColor="@color/colorLabel">
+
+            <EditText
+                android:hint="Email address"
+                android:inputType="textEmailAddress"
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="-23dp"
+            app:mtf_cardCollapsedHeight="2dp"
+            app:mtf_animationDuration="200"
+            app:mtf_openKeyboardOnFocus="true"
+            app:mtf_image="@drawable/ic_lock_black_24dp"
+            app:mtf_labelColor="@color/colorLabel">
+
+            <EditText
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <TextView
+            android:id="@+id/text_forgot"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="right"
+            android:text="Forgot Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.dd.processbutton.FlatButton
+            android:id="@+id/btn_sign_in"
+            android:textColor="@android:color/white"
+            app:pb_colorNormal="@color/colorPrimary"
+            app:pb_colorPressed="@color/colorPrimary"
+            android:text="LOGIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.dd.processbutton.FlatButton
+            android:id="@+id/btn_sign_up"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            app:pb_colorNormal="#34495e"
+            app:pb_colorPressed="#34495e"
+            android:text="REGISTER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

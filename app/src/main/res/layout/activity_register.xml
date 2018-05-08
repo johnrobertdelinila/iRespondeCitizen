@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_above="@+id/btn_register"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="-23dp"
+                android:layout_marginTop="10dp"
+                app:mtf_cardCollapsedHeight="2dp"
+                app:mtf_animationDuration="200"
+                app:mtf_hasFocus="true"
+                app:mtf_openKeyboardOnFocus="false"
+                app:mtf_image="@drawable/ic_account_circle_black_24dp"
+                app:mtf_labelColor="@color/colorLabel">
+
+                <EditText
+                    android:id="@+id/edit_firstname"
+                    android:hint="First name"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="-23dp"
+                app:mtf_cardCollapsedHeight="2dp"
+                app:mtf_animationDuration="200"
+                app:mtf_openKeyboardOnFocus="true"
+                app:mtf_image="@drawable/ic_account_circle_black_24dp"
+                app:mtf_labelColor="@color/colorLabel">
+
+                <EditText
+                    android:id="@+id/edit_lastname"
+                    android:hint="Last name"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="-23dp"
+                app:mtf_cardCollapsedHeight="2dp"
+                app:mtf_animationDuration="200"
+                app:mtf_openKeyboardOnFocus="true"
+                app:mtf_image="@drawable/ic_email_black_24dp"
+                app:mtf_labelColor="@color/colorLabel">
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="-23dp"
+                app:mtf_cardCollapsedHeight="2dp"
+                app:mtf_animationDuration="200"
+                app:mtf_openKeyboardOnFocus="true"
+                app:mtf_image="@drawable/national_code"
+                app:mtf_labelColor="@color/colorLabel">
+
+                <EditText
+                    android:id="@+id/edit_phone"
+                    android:hint="Phone number"
+                    android:inputType="phone"
+                    android:maxLength="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="-23dp"
+                app:mtf_cardCollapsedHeight="2dp"
+                app:mtf_animationDuration="200"
+                app:mtf_openKeyboardOnFocus="true"
+                app:mtf_image="@drawable/ic_lock_black_24dp"
+                app:mtf_labelColor="@color/colorLabel">
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:mtf_cardCollapsedHeight="2dp"
+                app:mtf_animationDuration="200"
+                app:mtf_openKeyboardOnFocus="true"
+                app:mtf_image="@drawable/ic_lock_black_24dp"
+                app:mtf_labelColor="@color/colorLabel">
+
+                <EditText
+                    android:id="@+id/edit_confirm"
+                    android:hint="Confirm password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.dd.processbutton.FlatButton
+        android:id="@+id/btn_register"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="NEXT"
+        android:textColor="@android:color/white"
+        app:pb_colorNormal="@color/colorPrimary"
+        app:pb_colorPressed="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

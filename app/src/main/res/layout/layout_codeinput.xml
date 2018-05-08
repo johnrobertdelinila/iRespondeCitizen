@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:background="@color/colorDialogTitle"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingStart="10dp"
+        android:text="Verification Code"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp"
+            android:text="A message with a verification code has been sent to your number. Enter the code to continue."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.raycoarana.codeinputview.CodeInputView
+            android:id="@+id/edit_code"
+            android:layout_margin="7dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:animate_on_complete="true"
+            app:underline_selected_color="@color/colorPrimary"
+            app:error_color="@color/colorPrimaryDark"
+            app:input_type="numeric" />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.github.aakira.compoundicontextview.CompoundIconTextView
+            android:id="@+id/resend_code"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="Didn't Get a Code?"
+            android:textColor="#7f8c8d"
+            android:textSize="16sp"
+            app:cit_drawableLeft="@drawable/ic_replay_black_24dp"
+            app:cit_iconColor="#000"
+            app:cit_iconHeight="16dp"
+            app:cit_iconWidth="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

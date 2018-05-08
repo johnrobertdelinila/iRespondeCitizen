@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:background="@color/colorLabel"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingStart="10dp"
+        android:text="Emergency SOS"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Make a call or emergency text to our service."
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.dd.processbutton.FlatButton
+                android:id="@+id/btn_call"
+                android:textColor="@android:color/white"
+                app:pb_colorNormal="@color/green"
+                app:pb_colorPressed="@color/green"
+                android:text="CALL"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+            <com.dd.processbutton.FlatButton
+                android:id="@+id/btn_sms"
+                android:textColor="@android:color/white"
+                app:pb_colorNormal="#2ecc71"
+                app:pb_colorPressed="#2ecc71"
+                android:text="SMS"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

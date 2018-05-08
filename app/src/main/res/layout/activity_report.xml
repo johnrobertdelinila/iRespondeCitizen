@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.oteptudlong.irespondecitizen.SquareImageView
+                android:id="@+id/imageView1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content" />
+
+            <com.example.oteptudlong.irespondecitizen.SquareImageView
+                android:id="@+id/imageView2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content" />
+
+            <com.example.oteptudlong.irespondecitizen.SquareImageView
+                android:id="@+id/imageView3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content" />
+
+            <com.example.oteptudlong.irespondecitizen.SquareImageView
+                android:id="@+id/imageView4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:text="CAMERA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_gallery"
+            android:text="PHOTO GALLERY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/niceSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edit_description"
+            android:hint="Description"
+            android:lines="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btn_next"
+            android:text="NEXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
